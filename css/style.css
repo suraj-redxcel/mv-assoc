@@ -232,6 +232,12 @@ ol {
 	transition: 300ms ease-in-out;
 }
 
+.site-btn.small {
+	min-width: 136px;
+	padding: 12px 0;
+	border: 2px solid #222222;
+}
+
 .site-btn.sb-light:hover,
 .site-btn.sb-dark:hover {
 	background-color: var(--accent-color);
@@ -257,6 +263,7 @@ ol {
 
 .site-btn.sb-light {
 	color: #fff;
+	border: 4px solid #fff;
 }
 
 .site-btn.sb-light:after,
@@ -317,6 +324,7 @@ ol {
 
 .accordion-area .panel-header.active {
 	background: var(--accent-color);
+	color: #fff;
 }
 
 .accordion-area .panel-header.active .panel-link:after {
@@ -799,7 +807,7 @@ ol {
 /*----------------------------------------*/
 .cta-section {
 	position: relative;
-	margin-bottom: 100px;
+	margin-block: 100px;
 }
 
 .cta-section:after {
@@ -1835,6 +1843,59 @@ ol {
 	margin-top: 30px;
 }
 
+.jobs {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.job-item {
+	padding: 1rem 2rem;
+	/* border: 1px solid green; */
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.job-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.job-title {
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 0.5em;
+}
+
+.job-description ul,
+.requirements-section ul {
+	list-style-type: none;
+	margin-bottom: 1rem;
+}
+
+.job-description ul li,
+.requirements-section ul li {
+	font-size: 16px;
+    color: #5c5c5c;
+    line-height: 2;
+}
+
+.job-description ul li i,
+.requirements-section ul li i {
+	color: #ff4208;
+	margin-right: 0.6rem;
+	opacity: 0.9;
+}
+
+.requirements-section h2 {
+	margin-bottom: 1.5rem;
+}
+
+.requirements-section i {
+	color: #ff4208;
+	margin-right: 0.6rem;
+	opacity: 0.9;
+}
 /* ===========================
   Responsive
 ==============================*/
